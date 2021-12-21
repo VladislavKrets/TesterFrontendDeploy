@@ -27,6 +27,7 @@ export default class AddQuestionComponent extends React.Component {
 
     deleteLast = () => {
         if (this.state.question.answers.length > 2) {
+        
             const {question} = this.state;
             question.answers.pop();
             this.setState({
